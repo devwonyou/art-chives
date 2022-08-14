@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "art_chivers",
+  "info": {
+    "singularName": "art-chiver",
+    "pluralName": "art-chivers",
+    "displayName": "ArtChiver",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "art_chiver"
+    }
+  }
+}
